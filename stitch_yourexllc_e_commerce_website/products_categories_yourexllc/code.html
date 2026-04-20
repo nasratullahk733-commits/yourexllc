@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f9f9f9",
+                    "primary": "#000000",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#e4e2e1",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#adabaa",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-primary": "#e2e2e2",
+                    "outline-variant": "#c6c6c6",
+                    "inverse-surface": "#2f3131",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#410002",
+                    "tertiary": "#3b3b3b",
+                    "primary-fixed": "#5e5e5e",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#c8c6c5",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "inverse-on-surface": "#f0f1f1",
+                    "tertiary-fixed": "#5f5e5e",
+                    "on-primary-fixed": "#ffffff",
+                    "on-tertiary": "#e4e2e1",
+                    "on-background": "#1a1c1c",
+                    "on-primary-fixed-variant": "#e2e2e2",
+                    "surface-container-high": "#e8e8e8",
+                    "inverse-primary": "#c6c6c6",
+                    "outline": "#777777",
+                    "on-surface-variant": "#474747",
+                    "surface-variant": "#e2e2e2",
+                    "tertiary-container": "#757474",
+                    "background": "#f9f9f9",
+                    "primary-fixed-dim": "#474747",
+                    "on-tertiary-fixed": "#ffffff",
+                    "on-tertiary-container": "#ffffff",
+                    "surface-container-low": "#f3f3f4",
+                    "surface-bright": "#f9f9f9",
+                    "surface-tint": "#5e5e5e",
+                    "on-primary-container": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#3c3b3b",
+                    "on-secondary-container": "#1b1c1c",
+                    "primary-container": "#3b3b3b",
+                    "secondary-container": "#d6d4d3",
+                    "surface-container": "#eeeeee",
+                    "surface-dim": "#dadada",
+                    "secondary": "#5f5e5e",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-fixed-dim": "#474747"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 h-20 bg-white dark:bg-black bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-gray-900 flex justify-between items-center px-8 md:px-16 w-full h-20">
+<div class="text-2xl font-bold tracking-tighter text-black dark:text-white font-headline">yourexllc</div>
+<nav class="hidden md:flex gap-12">
+<a class="font-['Manrope'] uppercase tracking-widest text-sm text-black dark:text-white font-black border-b-2 border-black dark:border-white hover:opacity-70 transition-opacity duration-300" href="#">Home</a>
+<a class="font-['Manrope'] uppercase tracking-widest text-sm text-gray-500 dark:text-gray-400 font-medium hover:opacity-70 transition-opacity duration-300" href="#">Shop</a>
+<a class="font-['Manrope'] uppercase tracking-widest text-sm text-gray-500 dark:text-gray-400 font-medium hover:opacity-70 transition-opacity duration-300" href="#">Gallery</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-black dark:text-white hover:opacity-70 transition-opacity">search</button>
+<button class="material-symbols-outlined text-black dark:text-white hover:opacity-70 transition-opacity">menu</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Title Section -->
+<section class="px-8 md:px-16 py-24 flex flex-col md:flex-row items-baseline justify-between gap-8 bg-surface-container-lowest">
+<div class="max-w-2xl">
+<p class="font-label uppercase tracking-[0.3em] text-xs mb-4 text-on-surface-variant">Collections / 2024</p>
+<h1 class="font-headline text-6xl md:text-8xl font-light tracking-tighter leading-none mb-8">Curated <br/>Dimensions.</h1>
+</div>
+<div class="max-w-xs">
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                    A precise selection of utilitarian excellence. Every object is a testament to the architect's vision of a monochromatic reality.
+                </p>
+</div>
+</section>
+<!-- Section 1: Home & Kitchen (Bento Grid) -->
+<section class="px-8 md:px-16 py-32 bg-surface" id="home-kitchen">
+<div class="flex items-center gap-4 mb-16">
+<h2 class="font-headline text-4xl font-bold uppercase tracking-tight">Home &amp; Kitchen</h2>
+<div class="h-[1px] flex-grow bg-outline-variant"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-0">
+<div class="md:col-span-2 md:row-span-2 aspect-square relative group overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover grayscale brightness-90 hover:scale-105 transition-transform duration-700" data-alt="minimalist black ceramic pour-over coffee set on a stark white kitchen counter with deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy8FSQoND4KF5MOxLqZvvA9j46yw36Xd8VhS_a-aKLLKA8mpk3JdoZoXUsimspVgCcsfmbJQuTl_TDD4wnmYDd0fDLKjkAdkbvTIP8HrBUkcEHHpXxOsZ9Kb5ooTDZTSHajrtHEq4TXfWS09eDHZXMZrQ4X3zSyVrt-FLmuMpB-8cPX9J5vs4edEW9HvT7J_lNqWGkyAJxPPOIJVyFPm-0brBTarpWMLYGSb0qxCxH1qq0eUNlKV8D-SdgdG_YRbI8a599MDf5HDKT"/>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/60 to-transparent">
+<h3 class="font-headline text-2xl text-white font-bold">Obsidian Brew Set</h3>
+<p class="text-white/80 font-label text-xs uppercase tracking-widest mt-2">$240.00</p>
+</div>
+</div>
+<div class="aspect-square relative group overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-700" data-alt="monochrome architectural brutalist concrete bowls arranged in a stack on a light gray surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzfbWeJpoLtuMPZEzHeHejkcDuP0uuulHbBnp6dBQ3CX6w7fc1sKuex2DnA3ElVVNNe44e_h4tzvOGuqpXzaad9ABPVrv--3O_va6lG4Iu9uLT7uJMQKYMutYT8BR_lQGz_TfDfLxrFCEmBarbSLSOlyhYVkbELzyEl7nDUJ0iyoWtBHG44YiygKR_XXQSDupgtnQMhlaecGejwlm7X9NNc6aoI98x1oAneYTtp_19UmrT35CgHKSrgL3HP5NEHnXbGfHLhruf-bYs"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-black px-6 py-2 font-label text-xs uppercase tracking-widest">View Details</span>
+</div>
+</div>
+<div class="aspect-square relative group overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-700" data-alt="black designer silverware set placed on a dark slate plate with dramatic top-down lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9oXsvdvPBFGN8JSExPrA_ur2qmbK9Qbn26QZxhM62YDFq-FhPy56wL6P-tEE8_eQS6BX2pHRLCCVQNfE2myGe8oazQ5R4FYkaBut3sglSYwlv-j1SeqXki0FrcjnlxtKr6cyMuOQ8NF7mC0DOrjCncdz4rl6E_GX9qBLztDR5qLOr6GsW90jqrCR4vaBUYW3bo5tcV-DCs24uX-DrMLboa6IzDQx65NDLCEbLnzie4ElJKc0ruBS6v0NhFCmWqOobzBSJowDpmU5E"/>
+<div class="absolute bottom-6 left-6">
+<p class="text-white font-headline text-lg">Slate Cutlery</p>
+<p class="text-white/70 font-label text-[10px]">$185.00</p>
+</div>
+</div>
+<div class="md:col-span-2 aspect-[2/1] relative group overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-700" data-alt="modern minimalist black electric kettle on a white marble surface with morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNvi5pCMAlPdjZtA5fEUTRA50HarSw_SJZzszeW_nZPeI7PKE7ONMnfLfkRCag5Yd9Py_QR_e0D7-OupjE8I9KpNVpygV_B1RSurHaIuFotyUf80hf9AAh03oqVDqaL6ryg8IhpJK2LS-Lyxas-pFKdNTqtHMAFhsRf-B1Qdo5NX2tpiPB3yhdCKlidohRUkenDuoa1Qv2gXCieUvPFr9_dW6bMZey_A9bAOgSNuCre4GdxZzKlDirNkBflkJHT8qmjD2IeFbCkzH2"/>
+<div class="absolute inset-0 flex items-center justify-start p-12">
+<div class="max-w-[50%]">
+<h3 class="font-headline text-3xl font-black mb-4">Precision Boiling</h3>
+<button class="font-label text-xs uppercase tracking-[0.3em] border-b border-primary pb-1">Shop Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Beauty (Editorial Layout) -->
+<section class="py-32 bg-primary text-on-primary" id="beauty">
+<div class="px-8 md:px-16 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<p class="font-label uppercase tracking-[0.4em] text-xs text-on-primary-fixed-variant mb-6">Purity &amp; Form</p>
+<h2 class="font-headline text-6xl font-light mb-8 leading-[0.9]">The Beauty <br/>Archive</h2>
+<p class="font-body text-sm text-on-primary-fixed-variant mb-12 leading-relaxed max-w-sm">
+                        High-performance formulas contained within architectural vessels. A sensory journey through light and darkness.
+                    </p>
+<div class="space-y-8">
+<div class="flex justify-between items-end border-b border-white/20 pb-4 group cursor-pointer hover:border-white transition-colors">
+<div>
+<h4 class="font-headline text-xl">Mineral Essence</h4>
+<p class="text-xs text-white/40 font-label uppercase mt-1">Serum / 50ml</p>
+</div>
+<span class="font-label text-sm">$85.00</span>
+</div>
+<div class="flex justify-between items-end border-b border-white/20 pb-4 group cursor-pointer hover:border-white transition-colors">
+<div>
+<h4 class="font-headline text-xl">Lunar Mask</h4>
+<p class="text-xs text-white/40 font-label uppercase mt-1">Detox / 100g</p>
+</div>
+<span class="font-label text-sm">$110.00</span>
+</div>
+<div class="flex justify-between items-end border-b border-white/20 pb-4 group cursor-pointer hover:border-white transition-colors">
+<div>
+<h4 class="font-headline text-xl">Nocturnal Oil</h4>
+<p class="text-xs text-white/40 font-label uppercase mt-1">Recovery / 30ml</p>
+</div>
+<span class="font-label text-sm">$95.00</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2 flex flex-col md:flex-row gap-8">
+<div class="flex-1 bg-tertiary aspect-[3/4]">
+<img class="w-full h-full object-cover grayscale brightness-110" data-alt="monochrome macro photography of thick white facial cream on a matte black spatula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5NW5yEDwQQYmqRQDKHxaiZmlwV1_da4NKiz1YFusNsfOAijusL3QGdc46j9OLLzgXGPLhZlfsDl-CM4vosJzcobu30eNB59zWhkxcIEY67hXsnMHeaAbBmJxUdJFsnWalBlytDghKGKHAF6NUxTKdVONG3dqu_yjlodfbZXs_wh3T-GpM25IYxUH8i9OmtXQwsUlusKbXR2M5BavJg7B429g8l45Mu9YcuifDKMfj7RRdBoUOWQ-PwZuQZkfomgzNlSp8tCzuXf8c"/>
+</div>
+<div class="flex-1 bg-tertiary aspect-[3/4] md:mt-16">
+<img class="w-full h-full object-cover grayscale" data-alt="minimalist skincare bottles in frosted black glass arranged on a mirror reflecting a white ceiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYbTAdSnQVwmRwMV0uYw3_yG3cGg2_g7nPdeTjEEInaG9Qz8gYPfvzDtUmhomXeYuoqSXMbTjMOj9v4x-tIdY0KNcRA_0PXMr3Dw9D4S9jAQe-AOEL9wH7lWOzp6vP4gdt3xcqqfNR3it67Oqq9Ab3Q3TVBbh0raJnPni-qBNYkvuIPjj6Nm9fEMlsOJ-QcDDoAhx1K-xFMJ6y6ZqvWejI4K1oULv7hjgVwmPfcBkMhhdBjUkP0Up1HstOpPJ6CML8hCTE4MOzPgGb"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Sports (Asymmetric Grid) -->
+<section class="px-8 md:px-16 py-32 bg-surface-container-low" id="sports">
+<div class="mb-24 flex flex-col md:flex-row justify-between items-end gap-8">
+<h2 class="font-headline text-7xl font-black uppercase tracking-tighter">Sports</h2>
+<p class="font-label text-xs uppercase tracking-widest max-w-[200px] text-right">Engineered for technical dominance.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Product 1 -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-surface-container-highest mb-6 group relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="black professional running shoe on a stark white background with sharp shadows and technical textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCassMV3tFZwpOjL8FLx2QnWe2r0j8A3heRMs4Da9VyZbbcPM081i8s0fapCRiUWZp5mWQEa2bDgEqLJCdj1FNJqaPj5bnLwDkBMr0VS1vK3U9r54BgUOLqIEVXynE5vYukc5YcaOUdimQCiXP82YH6W5X1fj28yGUexWlBQk99ynurv1gCT1xiEDIyESljkl2RIITK9FdykwpmD1iSEvcADjGHyMyIuACsORzaDgbvCk58uwJoeYLC2uRvAPVi6xMAKoNgZy80ERQe"/>
+<div class="absolute top-0 right-0 bg-primary text-white p-4 font-label text-[10px] uppercase tracking-widest">New Arrival</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl font-bold uppercase">Aero-01 Runner</h3>
+<p class="font-body text-xs text-on-surface-variant mt-2 max-w-[180px]">Ultra-lightweight mesh with carbon-fiber architecture.</p>
+</div>
+<p class="font-headline font-black text-xl">$210</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex flex-col md:mt-32">
+<div class="aspect-[4/5] bg-surface-container-highest mb-6 group relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale brightness-75" data-alt="matte black high-quality kettlebells on a dark rubber gym floor with atmospheric smoke and side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhtzEN6MLl_9kDVGhxIYDtSe9yt-wy2HszRVZNJSWbBDZBPY6QtNq1Bt_WEk1PN8_WT_PUZQJAiunGV01b_l1BbuLAewr3046KNnU4Lz8PxFM5saTKGWfnVGSkVPgdq9vTKmCyTb6v-HFwWTQPOmPiYmhiwStTe9midwFgkiQW43XfNYszmEzusQc-tCxU_2uZWJfGKk41oPu8TyorzaR_d_NMFTgw7BXcBc-iJk4TB5AAE7yGGxSYtEAK7d64LQHzIBbknjIIEgGz"/>
+<div class="absolute inset-0 border-[20px] border-surface-container-low opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl font-bold uppercase">Cast Iron Core</h3>
+<p class="font-body text-xs text-on-surface-variant mt-2 max-w-[180px]">Precision weight distribution for elite movement.</p>
+</div>
+<p class="font-headline font-black text-xl">$75</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-surface-container-highest mb-6 group relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-90" data-alt="black yoga mat and foam roller on a clean concrete floor in a bright minimalist studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx93gCHpK1UwW5Y_gt9oEZXo0haxzC31TaQ7G6SwORFduN-6iiIjDfDOjKgmzEW4tW0k6ewbrXRjkydTPxIATn8Ow6SaXL53SblQGMaqxMDDa8x-D4FFdk0340IBEcN-D4S2t1dgG_PIUkigGrPS1KPMZfQjKIBZQ3HxPNvUDUytjAY6aEeUneuLRuAWh_Q8QngN_Tycs_gntDGeZJouCOAkSk-MPCjk4WsWdjzw3y07ffSDmZ_UqY0cPBLUFMCmAGlL08WX5Qlnpn"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl font-bold uppercase">Zenith Mat</h3>
+<p class="font-body text-xs text-on-surface-variant mt-2 max-w-[180px]">Non-slip microbial surface in deep obsidian.</p>
+</div>
+<p class="font-headline font-black text-xl">$120</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Tools (Industrial Tonal Shifts) -->
+<section class="py-32 bg-surface-container-lowest" id="tools">
+<div class="px-8 md:px-16 mb-16">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<h2 class="font-headline text-5xl font-black uppercase tracking-tighter">Tools &amp; Utility</h2>
+<div class="flex gap-4">
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-8 px-8 md:px-16">
+<!-- Tool Card 1 -->
+<div class="min-w-[300px] md:min-w-[450px] bg-surface-container-low p-8 flex flex-col justify-between aspect-[3/4]">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-2">Ref: TX-01</p>
+<h3 class="font-headline text-3xl font-bold mb-4">Carbon Multi-Tool</h3>
+</div>
+<div class="relative h-48 mb-8">
+<img class="w-full h-full object-contain grayscale" data-alt="close-up of professional black metal multi-tool unfolding on a textured gray surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxZSiSKoM5YaScyn0HLt6OEaoSQeIneMkklh0XiJUrJsP5lJZJdWJ4GUoi71aZ-E9YkABs0Wl0e4bvl98ZW9xyWpKBPDLnr14nHXY1y5BT5iajVDufwmNDSJ9dJ97USJmKLI7-lrIl9YQU1MhoISw-ue0zhHbdwZ7XalsBiiv3Nc42eyNb_HnhEkPvJ8pf-y5crQoEifTCSkyJTRkH6_THSfnqhsyJ2LYWN-gCYY9cB_fm8pB_MSxfVfyqnAvj1iHfj5QUQZ863HGB"/>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-headline text-2xl font-light">$65.00</span>
+<button class="bg-primary text-on-primary px-8 py-3 font-label text-xs uppercase tracking-widest">Add to Kit</button>
+</div>
+</div>
+<!-- Tool Card 2 -->
+<div class="min-w-[300px] md:min-w-[450px] bg-surface-container-high p-8 flex flex-col justify-between aspect-[3/4]">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-2">Ref: TX-02</p>
+<h3 class="font-headline text-3xl font-bold mb-4">Titanium Driver Set</h3>
+</div>
+<div class="relative h-48 mb-8">
+<img class="w-full h-full object-contain grayscale" data-alt="luxury black screwdriver set in a sleek magnetic case with high-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZCp3wLKpdrS6k7mjV9ZqcWmWwqPwwyN2m2ifLKoZdZ3pNqRbttUXOflafyBE_E2OzTmF01x3JEtUPBJ2zgaDKPcUD5aoWsIwXRdPRvPtSZHXxeN2GKQs0snz9ARZVbfbRdkrF3I1264d_EZrE9a-lwx46oWXQoauTABvCbZ7SRe8bManzQ_KtCWBSNjM-ZDg6r12V9qXis4MFRBb-fN5MVdkC0pMx68wEi7Kn0QXytt8S7J24JdKCiJ-q6fClz9WprXub7h8-XM6D"/>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-headline text-2xl font-light">$140.00</span>
+<button class="bg-primary text-on-primary px-8 py-3 font-label text-xs uppercase tracking-widest">Add to Kit</button>
+</div>
+</div>
+<!-- Tool Card 3 -->
+<div class="min-w-[300px] md:min-w-[450px] bg-surface-container-highest p-8 flex flex-col justify-between aspect-[3/4]">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-2">Ref: TX-03</p>
+<h3 class="font-headline text-3xl font-bold mb-4">Laser Level Pro</h3>
+</div>
+<div class="relative h-48 mb-8">
+<img class="w-full h-full object-contain grayscale" data-alt="matte black industrial laser level device emitting a sharp red line across a concrete floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAB9eOePvOfwK-tgn9ZAj2S934jLHtdpxMoSu_9-sIuy0WVFsrHdXPmw2vZwPvPiUHtpsj-0VPh-yTWl3i5Sy2AuYfodimWkOumTATzSvfBWITxp-Xy0U2hbAUEjcPVaAyeeNyHstC0x3CFr8v9t-DGIQkFtVDYK9QW9I9_PeZqU--qPlpMb7mIRh0MvZwREDIgnK_dHdX5IqwzpWoUdXJd9OKzWjx_5do9f17fKcXp3pInm0AGTxkWer2vq8IcEdBuFFQDY39dP__"/>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-headline text-2xl font-light">$290.00</span>
+<button class="bg-primary text-on-primary px-8 py-3 font-label text-xs uppercase tracking-widest">Add to Kit</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 md:px-16 border-t-0 bg-black dark:bg-zinc-950 text-white dark:text-gray-300">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-full mx-auto">
+<div class="flex flex-col gap-6">
+<div class="text-xl font-black text-white font-headline">yourexllc</div>
+<p class="font-body text-xs text-gray-500 leading-relaxed max-w-xs">
+                    An architectural perspective on digital commerce. Defining prestige through monochromatic discipline.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-label text-[10px] uppercase tracking-[0.4em] text-gray-600 mb-2">Navigation</p>
+<div class="flex flex-col gap-3">
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-gray-500 hover:text-white transition-colors" href="#">Home</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-gray-500 hover:text-white transition-colors" href="#">About</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-gray-500 hover:text-white transition-colors" href="#">Contact</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-gray-500 hover:text-white transition-colors" href="#">Terms</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-gray-500 hover:text-white transition-colors" href="#">Privacy</a>
+</div>
+</div>
+<div class="flex flex-col justify-between">
+<div>
+<p class="font-label text-[10px] uppercase tracking-[0.4em] text-gray-600 mb-4">Newsletter</p>
+<div class="flex border-b border-gray-800 pb-2">
+<input class="bg-transparent border-none p-0 text-xs font-label uppercase tracking-widest focus:ring-0 placeholder-gray-700 w-full" placeholder="ENTER EMAIL" type="email"/>
+<button class="material-symbols-outlined text-gray-500 hover:text-white">arrow_forward</button>
+</div>
+</div>
+<p class="font-['Inter'] text-[10px] uppercase tracking-widest mt-12 text-gray-600">© 2024 yourexllc. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>
